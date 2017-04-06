@@ -7,7 +7,7 @@ body {
 }
 
 #top {
-	margin-left: 50%;
+	margin-left: 48%;
 	position: fixed;
 	width: 50px;
 	z-index: 1;
@@ -53,11 +53,13 @@ div .panel {
 
 #page1 {
 	width: 100%;
-	height: 100%;
+	height: 600px;
 	background-image: url("../images/nyc.jpg");
 	background-size: 100% 100%;
 }
-
+#cover {
+	background-color: rgba(255,255,255, .2);
+}
 #header {
 	width: 100%;
 	height: 50px;
@@ -81,39 +83,25 @@ div .panel {
 
 #homepage{
 	text-align: center;
-	margin: 10% 0;
 }
-#welcome{
-	width: 100%;
-	position: relative;
+#homepage img {	
+	width: 80%;
 }
-#welcome img {	
-	width: 60%;
-	opacity: .93;
-}
-#welcome h1{
-	position: absolute;
-	left: 40%;
-	top: 0;
-	font-size: 8em;
-}
-#welcome h2{
-	position: absolute;
-	left: 22%;
-	top: 40%;
-	font-size: 6em;
-}
-
 
 
 
 #intro {
 	width: 100%;
-	height: 300px;
+	height: 350px;
 	text-align: center;
-	padding: 10% 0 5% 0;
+	padding: 5% 0;
+	display: inline-block;
 }
-
+.img {
+	width: 30%;
+	float: left;
+	margin-left: 2%;
+}
 
 
 
@@ -121,19 +109,16 @@ div .panel {
 
 #page2 {
 	width: 100%;
-	text-align: center;
-	color: white;
 	display: inline-block;
+	margin-bottom: 1%;
 }
 
 #home-info {
-	width: 25%;
-	height: 380px;
-	margin: 4% 0 0 3%;
+	width: 30%;
+	margin: 0 0 0 3%;
 	float: left;
-	padding: 0 5%;
-	background: radial-gradient(#666, #222);
-	overflow: hidden;
+	padding: 0 1%;
+	margin-top: 5%;
 }
 
 #home-info li {
@@ -143,8 +128,6 @@ div .panel {
 #home {
 	width: 60%;
 	float: right;
-	background-color: white;
-	position: relative;
 }
 
 #home img {
@@ -154,16 +137,8 @@ div .panel {
 	border: 1px solid grey;
 	height: 400px;
 }
-#home h1 {
-	position: absolute;
-	left: 45%;
-	top: 30%;
-	background-color: 
-}
 
-#home-info .panel {
-	margin-bottom: 100%;
-}
+
 
 
 
@@ -172,7 +147,6 @@ div .panel {
 
 #page3 {
 	width: 100%;
-	color: black;
 	display: inline-block;
 	margin-bottom: 8%;
 }
@@ -206,9 +180,3 @@ div .panel {
 
 
 
-
-
-#page4 {
-	width: 100%;
-	height: 100%;
-}

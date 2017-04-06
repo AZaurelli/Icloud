@@ -1,0 +1,54 @@
+<!Doctype html>
+<html>
+<head>
+	<title>Icloud Cleaning Service</title>
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<div id="page1">
+		<div id="info" class="container">
+			<img src="images/cloud.png">
+		</div>
+		<div id="About" class="container" style="display:none">
+		  <h2>Why iCloud</h2>
+		  <div class="img"><img src="images/7days.png"></div>
+		  <div class="img"><img src="images/ecofriendly.png"></div>
+		  <div class="img"><img src="images/nyc.png"></div>
+		</div>
+
+		<div id="Services" class="container" style="display:none">
+		  <h2>Services</h2>
+		  <div id="home">
+			<h3>Home</h3>
+			<img src="images/home.jpg">
+		  </div>
+		  <div id="buisness">
+			<h3>Buisness</h3>
+			<img src="images/office.jpg">
+		  </div>
+		</div>
+
+		<div id="Contact" class="container" style="display:none">
+		  <h2>Contact</h2>
+		</div>
+		<div id="nav">
+			<ul>
+				<a href="#"><button id="word" onclick="openPage('About')">Why iCloud</button></a>
+				<a href="#"><button id="word" onclick="openPage('Services')">Services</button></a>
+				<a href="#"><button id="word" onclick="openPage('Contact')">Contact</button></a>
+			</ul>
+		</div>
+	</div>
+	
+	<script>
+		function openPage(pageName) {
+			var i;
+			var x = document.getElementsByClassName("container");
+			for (i = 0; i < x.length; i++) {
+			   x[i].style.display = "none";  
+			}
+			document.getElementById(pageName).style.display = "block";  
+		}
+	</script>
+	
+</html>

@@ -1,0 +1,100 @@
+body {
+	margin: 0;
+	background-image: url("../images/nyc.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	overflow:hidden;
+}
+
+* {
+	font-family: myFirstfont;
+}
+
+@font-face {
+	font-family: myFirstfont;
+	src: url("../fonts/PetitaLight.ttf");
+}
+
+#page1 {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(255,255,255, .4);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.container {
+	width: 90%;
+	height: 80%;
+	margin: 2% 5%;
+	border: 2px solid black;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+#info {
+	border: none;
+}
+
+#info img {
+	width: 100%;
+}
+
+#About {
+	background-color: #fff;
+	display: inline-block;
+}
+
+.img {
+	width: 30%;
+	float: left;
+	margin: 10% 1% 0 1%;
+}
+
+#Services {
+	background-color: rgba( 0, 0, 0, .2);	
+	display: inline-block;
+}
+
+#home {
+	width: 50%;
+	float: left;
+	margin: 0;
+}
+#home img {
+	width: 50%;
+	height: 20%;
+}
+
+#buisness {
+	width: 50%;
+	float: left;
+}
+#buisness img {
+	width: 50%;
+	height: 20%;
+}
+
+#Contact {
+	background-color: rgba( 0, 0, 0, .2);	
+}
+
+#nav {	
+	text-align: center;
+}
+
+#nav button{
+	display: inline;
+	padding: 0 5%;
+	font-size: 3em;
+	border: none;
+	background: none;	
+}
+
+button:focus {outline:0;}
+
+#nav a {
+	text-decoration: none;
+	color: black;
+}
