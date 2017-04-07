@@ -78,9 +78,8 @@ div .panel {
 	padding: 1% 0;
 	position: fixed;
 	top: 0;
-	background-color: #E8E5DD;
 	z-index: 1;
-	display: inline-block:
+	display: inline-block
 }
 
 #header img {
@@ -134,7 +133,6 @@ div .panel {
 #page2 {
 	width: 100%;
 	display: inline-block;
-	padding-bottom: 1%;
 	background-color: #E8E5DD;
 }
 
@@ -150,12 +148,12 @@ div .panel {
 	list-style-type: none;
 }
 
-#home {
+#home-img {
 	width: 60%;
 	float: right;
 }
 
-#home img {
+#home-img img {
 	width: 90%;
 	margin: 2%;
 	padding: 1%;
@@ -173,16 +171,15 @@ div .panel {
 #page3 {
 	width: 100%;
 	display: inline-block;
-	padding-bottom: 8%;
 	background-color: #E8E5DD;
 }
 
-#buisness {
-	width:60%; 
+#buisness-img {
+	width: 60%; 
 	float: left;
 }
 
-#buisness img {
+#buisness-img img {
 	width: 90%;
 	height: 400px;
 	margin: 2%;
@@ -202,7 +199,27 @@ div .panel {
 	font-size: 1em;
 }
 
+.container {
+	width: 90%;
+	height: 80%;
+	padding: 0 5%;
+	background-color: #E8E5DD;
+}
+#nav button{
+	width: 30%;
+	display: inline;
+	padding: 0 5%;
+	font-size: 3em;
+	border: 1px solid black;
+	background: none;
+}
+#nav button:focus {outline:0;}
 
-
-
-
+#nav {
+	text-align: center;
+	padding: 2%;
+	background-color: #E8E5DD;
+}
+#nav a {
+	text-decoration: none;
+}

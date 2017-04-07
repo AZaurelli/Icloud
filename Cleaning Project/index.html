@@ -15,8 +15,8 @@
 			<ul>
 				<img src="images/cloud.png"> 
 				<a href="#intro"><li id="word">Why ICloud</li></a>
-				<a href="#page2"><li id="word">Home</li></a>
-				<a href="#page3"><li id="word">Buisness</li></a>
+				<a href="#page2"><li id="word" onclick="openPage('home')">Home</li></a>
+				<a href="#page3"><li id="word" onclick="openPage('buisness')">Buisness</li></a>
 			</ul>
 		</div>
 		<div id="homepage">
@@ -33,7 +33,13 @@
 		  <div class="img"><img src="images/nyc.png"></div>
 		</div>
 	</div>
-
+		<div id="nav">
+			<ul>
+				<a href="#page2"><button id="word" onclick="openPage('home')">Home</button></a>
+				<a href="#page3"><button id="word" onclick="openPage('buisness')">Buisness</button></a>
+			</ul>
+		</div>
+	<div id="home" class="container" style="display:none">
 	<div id="page2">
 		<div id="home-info">
 			<h1>Home</h1>
@@ -58,15 +64,16 @@
 				Proper removal of dust and careful treatment to blinds and mini blinds.</p>
 			</div> 
 		</div>	
-		<div id="home">
+		<div id="home-img">
 		<div id="home-gra">
 			<img src="images/home.jpg">	
 		</div>
 		</div>
 	</div>
-
+	</div>
+	<div id="buisness" class="container" style="display:none">
 		<div id="page3">
-		<div id="buisness">
+		<div id="buisness-img">
 			<img src="images/office.jpg">
 		</div>
 		<div id="buisness-info">
@@ -93,10 +100,6 @@
 			</div> 
 		</div>
 	</div>
-
-	<div id="page4">
-		<div id="contact"></div>
-		<div id="contact-info"></div>
 	</div>
 </body>
 <script>
@@ -140,7 +143,7 @@ $(document).ready(function(){
       });
     } // End if
   });
-  function toTop(){
+	function toTop(){
              scroller = setTimeout(function(){
                 toTop();
               }, 1);
@@ -153,6 +156,16 @@ $(document).ready(function(){
 
               window.scroll(0, marginY);
             }
+</script>
+<script>
+	function openPage(pageName) {
+		var i;
+		var x = document.getElementsByClassName("container");
+		for (i = 0; i < x.length; i++) {
+		   x[i].style.display = "none";  
+		}
+		document.getElementById(pageName).style.display = "block";  
+	}
 </script>
 
 </html>
