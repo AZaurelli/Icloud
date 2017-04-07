@@ -5,102 +5,103 @@
 	<link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-	<div id="top">
+
+	<div class="top">
 		<a href="#" onclick="toTop(); return false;"><img src="images/top.png"></a>
 	</div>
+	
 	<div id="page1">
-	<div class="parallax"></div>
-	<div id="cover"></div>
-		<div id="header">
+		<div class="parallax"></div>
+		<div class="cover"></div>
+		<div class="header">
 			<ul>
-				<img src="images/cloud.png"> 
+				<a href="#page1"><img src="images/cloud.png"></a>
 				<a href="#intro"><li id="word">Why ICloud</li></a>
 				<a href="#page2"><li id="word" onclick="openPage('home')">Home</li></a>
 				<a href="#page3"><li id="word" onclick="openPage('buisness')">Buisness</li></a>
 			</ul>
 		</div>
-		<div id="homepage">
+		<div class="homepage">
 			<img src="images/cloud.png">
 		</div>
 	</div>
-	</div>
 
 	<div id="intro">
-		<div id="intro-infro">
-			<h1>Why<br>ICloud?</h1>
-		  <div class="img"><img src="images/7days.png"></div>
-		  <div class="img"><img src="images/ecofriendly.png"></div>
-		  <div class="img"><img src="images/nyc.png"></div>
-		</div>
+		<h1>Why<br>ICloud?</h1>
+		<div class="img"><img src="images/7days.png"></div>
+		<div class="img"><img src="images/ecofriendly.png"></div>
+		<div class="img"><img src="images/nyc.png"></div>
 	</div>
-		<div id="nav">
-			<ul>
-				<a href="#page2"><button id="word" onclick="openPage('home')">Home</button></a>
-				<a href="#page3"><button id="word" onclick="openPage('buisness')">Buisness</button></a>
-			</ul>
-		</div>
+	
+	<div id="nav">
+		<ul>
+			<a href="#page2"><button id="word" onclick="openPage('home')">Home</button></a>
+			<a href="#page3"><button id="word" onclick="openPage('buisness')">Buisness</button></a>
+		</ul>
+	</div>
+	
 	<div id="home" class="container" style="display:none">
-	<div id="page2">
-		<div id="home-info">
-			<h1>Home</h1>
-			<h2>What does this include</h2>
-			<p>We offer a variety of home cleaning service</p>
-			<button class="accordion">Bedroom & Living Room</button>
-			<div class="panel">
-				<p>Wipe down tables and chairs.<br>
-				Removing dirt from carpets using high-powered vacuums.<br>
-				Removing garbage and debris.</p>
-			</div> <br>
-			<button class="accordion">Bathroom & Kitchen</button>
-			<div class="panel">
-				<p>Wash Dishes<br>
-				Clean counters<br>
-				Stove</p>
-			</div> <br>
-			<button class="accordion">Extra Services</button>
-			<div class="panel">
-				<p>Polished furniture.<br>
-				Dusting window sills and desk.<br>
-				Proper removal of dust and careful treatment to blinds and mini blinds.</p>
-			</div> 
-		</div>	
-		<div id="home-img">
-		<div id="home-gra">
-			<img src="images/home.jpg">	
-		</div>
+		<div id="page2">
+			<div class="home-info">
+				<h1>Home</h1>
+				<h2>What does this include</h2>
+				<p>We offer a variety of home cleaning service</p>
+				<button class="accordion">Bedroom & Living Room</button>
+				<div class="panel">
+					<p>Wipe down tables and chairs.<br>
+					Removing dirt from carpets using high-powered vacuums.<br>
+					Removing garbage and debris.</p>
+				</div> <br>
+				<button class="accordion">Bathroom & Kitchen</button>
+				<div class="panel">
+					<p>Wash Dishes<br>
+					Clean counters<br>
+					Stove</p>
+				</div> <br>
+				<button class="accordion">Extra Services</button>
+				<div class="panel">
+					<p>Polished furniture.<br>
+					Dusting window sills and desk.<br>
+					Proper removal of dust and careful treatment to blinds and mini blinds.</p>
+				</div> 
+			</div>	
+			<div class="home-img">
+				<img src="images/home.jpg">	
+			</div>
 		</div>
 	</div>
-	</div>
+	
 	<div id="buisness" class="container" style="display:none">
 		<div id="page3">
-		<div id="buisness-img">
-			<img src="images/office.jpg">
-		</div>
-		<div id="buisness-info">
-			<h1>Business</h1>
-			<h2>What is included in our cleaning?</h2>
-			<p>We clean offices, rooms, hallways, lobbies, restrooms, elevators, and all other work areas</p>
-			<button class="accordion">Lobbies & Conference Rooms</button>
-			<div class="panel">
-				<p>Wipe down tables and chairs.<br>
-				Removing dirt from carpets using high-powered vacuums.<br>
-				Removing garbage and debris.</p>
-			</div> <br>
-			<button class="accordion">Break rooms</button>
-			<div class="panel">
-				<p>Wash Dishes<br>
-				Clean counters<br>
-				Stove</p>
-			</div> <br>
-			<button class="accordion"> Kitchens</button>
-			<div class="panel">
-				<p>Polished furniture.<br>
-				Dusting window sills and desk.<br>
-				Proper removal of dust and careful treatment to blinds and mini blinds.</p>
-			</div> 
+			<div class="buisness-img">
+				<img src="images/office.jpg">
+			</div>
+			<div class="buisness-info">
+				<h1>Business</h1>
+				<h2>What is included in our cleaning?</h2>
+				<p>We clean offices, rooms, hallways, lobbies, restrooms, elevators, and all other work areas</p>
+				<button class="accordion">Lobbies & Conference Rooms</button>
+				<div class="panel">
+					<p>Wipe down tables and chairs.<br>
+					Removing dirt from carpets using high-powered vacuums.<br>
+					Removing garbage and debris.</p>
+				</div> <br>
+				<button class="accordion">Break rooms</button>
+				<div class="panel">
+					<p>Wash Dishes<br>
+					Clean counters<br>
+					Stove</p>
+				</div> <br>
+				<button class="accordion"> Kitchens</button>
+				<div class="panel">
+					<p>Polished furniture.<br>
+					Dusting window sills and desk.<br>
+					Proper removal of dust and careful treatment to blinds and mini blinds.</p>
+				</div> 
+			</div>
 		</div>
 	</div>
-	</div>
+	
 </body>
 <script>
 var acc = document.getElementsByClassName("accordion");
