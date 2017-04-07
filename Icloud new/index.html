@@ -20,11 +20,49 @@
 		  <h2>Services</h2>
 		  <div id="home">
 			<h3>Home</h3>
-			<img src="images/home.jpg">
+			<h5>What does this include?</h5>
+			<p>We offer a variety of home cleaning service</p>
+			<button class="accordion">Bedroom & Living Room</button>
+			<div class="panel">
+				<p>Wipe down tables and chairs.<br>
+				Removing dirt from carpets using high-powered vacuums.<br>
+				Removing garbage and debris.</p>
+			</div> <br>
+			<button class="accordion">Bathroom & Kitchen</button>
+			<div class="panel">
+				<p>Wash Dishes<br>
+				Clean counters<br>
+				Stove</p>
+			</div> <br>
+			<button class="accordion">Extra Services</button>
+			<div class="panel">
+				<p>Polished furniture.<br>
+				Dusting window sills and desk.<br>
+				Proper removal of dust and careful treatment to blinds and mini blinds.</p>
+			</div> 
 		  </div>
 		  <div id="buisness">
 			<h3>Buisness</h3>
-			<img src="images/office.jpg">
+			<h5>What is included in our cleaning?</h5>
+			<p>We clean offices, rooms, hallways, lobbies, restrooms, elevators, and all other work areas</p>
+			<button class="accordion">Lobbies & Conference Rooms</button>
+			<div class="panel">
+				<p>Wipe down tables and chairs.<br>
+				Removing dirt from carpets using high-powered vacuums.<br>
+				Removing garbage and debris.</p>
+			</div> <br>
+			<button class="accordion">Break rooms</button>
+			<div class="panel">
+				<p>Wash Dishes<br>
+				Clean counters<br>
+				Stove</p>
+			</div> <br>
+			<button class="accordion"> Kitchens</button>
+			<div class="panel">
+				<p>Polished furniture.<br>
+				Dusting window sills and desk.<br>
+				Proper removal of dust and careful treatment to blinds and mini blinds.</p>
+			</div> 
 		  </div>
 		</div>
 
@@ -48,6 +86,22 @@
 			   x[i].style.display = "none";  
 			}
 			document.getElementById(pageName).style.display = "block";  
+		}
+	</script>
+	<script>
+		var acc = document.getElementsByClassName("accordion");
+		var i;
+
+		for (i = 0; i < acc.length; i++) {
+			acc[i].onclick = function(){
+				this.classList.toggle("active");
+				var panel = this.nextElementSibling;
+				if (panel.style.display === "block") {
+					panel.style.display = "none";
+				} else {
+					panel.style.display = "block";
+				}
+			}
 		}
 	</script>
 	
