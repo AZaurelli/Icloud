@@ -5,45 +5,19 @@
 	<link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-
-	<div class="top">
-		<a href="#" onclick="toTop(); return false;"><img src="images/top.png"></a>
-	</div>
 	
 	<div id="page1">
 		<div class="parallax"></div>
 		<div class="cover"></div>
-		<div class="header">
-			<ul>
-				<a href="#page1"><img src="images/cloud.png"></a>
-				<a href="#intro"><li id="word">Why ICloud</li></a>
-				<a href="#page2"><li id="word" onclick="openPage('home')">Home</li></a>
-				<a href="#page3"><li id="word" onclick="openPage('buisness')">Buisness</li></a>
-			</ul>
-		</div>
 		<div class="homepage">
 			<img src="images/cloud.png">
 		</div>
 	</div>
 
-	<div id="intro">
-		<h1>Why<br>ICloud?</h1>
-		<div class="img"><img src="images/7days.png"></div>
-		<div class="img"><img src="images/ecofriendly.png"></div>
-		<div class="img"><img src="images/nyc.png"></div>
-	</div>
-	
-	<div id="nav">
-		<ul>
-			<a href="#page2"><button id="word" onclick="openPage('home')">Home</button></a>
-			<a href="#page3"><button id="word" onclick="openPage('buisness')">Buisness</button></a>
-		</ul>
-	</div>
-	
 	<div id="home" class="container" style="display:none">
 		<div id="page2">
 			<div class="home-info">
-				<h1>Home</h1>
+				<h1>Home Cleaning</h1>
 				<h2>What does this include</h2>
 				<p>We offer a variety of home cleaning service</p>
 				<button class="accordion">Bedroom & Living Room</button>
@@ -64,20 +38,24 @@
 					Dusting window sills and desk.<br>
 					Proper removal of dust and careful treatment to blinds and mini blinds.</p>
 				</div> 
+				<p>There is a 3hr minimum</p>
 			</div>	
 			<div class="home-img">
 				<img src="images/home.jpg">	
 			</div>
+			<div class="back">
+				<a href="#page1" onclick="openPage('page1')"><img src="images/back.png"></a>
+			</div>
 		</div>
 	</div>
 	
-	<div id="buisness" class="container" style="display:none">
+	<div id="business" class="container" style="display:none">
 		<div id="page3">
-			<div class="buisness-img">
+			<div class="business-img">
 				<img src="images/office.jpg">
 			</div>
-			<div class="buisness-info">
-				<h1>Business</h1>
+			<div class="business-info">
+				<h1>Business Cleaning</h1>
 				<h2>What is included in our cleaning?</h2>
 				<p>We clean offices, rooms, hallways, lobbies, restrooms, elevators, and all other work areas</p>
 				<button class="accordion">Lobbies & Conference Rooms</button>
@@ -97,9 +75,51 @@
 					<p>Polished furniture.<br>
 					Dusting window sills and desk.<br>
 					Proper removal of dust and careful treatment to blinds and mini blinds.</p>
-				</div> 
+				</div>
+				<p>There is a 3hr minimum</p>
+			</div>
+			<div class="back">
+				<a href="#page1" onclick="openPage('page1')"><img src="images/back.png"></a>
 			</div>
 		</div>
+	</div>
+	
+	<div id="information" class="container" style="display: none;">
+		<div id="page4">
+			<form>
+				<h1>Hours of Operation</h1>
+				<h3>Office Hours</h3>
+				<ul>
+					<li>Mondays to Fridays: 9am to 5pm</li>
+					<li>Cleaning Services are 7 days a week</li>
+					<li>Email: info@icloudcleaning.com</li>
+				</ul>
+				<img src="images/bottle.png">
+			</form>
+			<form>
+				<h1>Contact Us</h1>
+				<input type="text" class="contact-input" placeholder="First Name"></input>
+				<input type="text" class="contact-input" placeholder="Last Name"></input>
+				<input type="text" class="contact-input" placeholder="Phone-number"></input>
+				<br>
+				<select>
+					<option>Home</option>
+					<option>Business</option>
+				</select>
+				<br>
+				<input type="email" class="contact-input" placeholder="Email"></input>
+				<br>
+ 				<button type="submit">Send</button>
+			</form>
+		</div>
+	</div>
+	
+	<div id="nav">
+		<ul>
+			<a href="#home"><button onclick="openPage('home')">Home Cleaning</button></a>
+			<a href="#business"><button onclick="openPage('business')">Business Cleaning</button></a>
+			<a href="#information"><button onclick="openPage('information')">Information</button></a>
+		</ul>
 	</div>
 	
 </body>
@@ -121,44 +141,6 @@ for (i = 0; i < acc.length; i++) {
 </script>
 
 <script>
-$(document).ready(function(){
-  // Add smooth scrolling to all links
-  $("a").on('click', function(event) {
-
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
-
-      // Store hash
-      var hash = this.hash;
-
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 1000, function(){
-   
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
-	function toTop(){
-             scroller = setTimeout(function(){
-                toTop();
-              }, 1);
-
-              marginY = marginY - speed;
-
-              if(marginY <= 0){
-                clearTimeout(scroller);
-              }
-
-              window.scroll(0, marginY);
-            }
-</script>
-<script>
 	function openPage(pageName) {
 		var i;
 		var x = document.getElementsByClassName("container");
@@ -166,6 +148,17 @@ $(document).ready(function(){
 		   x[i].style.display = "none";  
 		}
 		document.getElementById(pageName).style.display = "block";  
+	}
+</script>
+
+<script>
+	function validateForm() {
+	var isValid = true;
+		$('form.validated-form input[type='text')
+		if ( $(this).val() === '' )
+			isValid = false;
+	});
+	return isVaild;
 	}
 </script>
 
