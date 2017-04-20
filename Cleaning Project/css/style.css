@@ -1,7 +1,6 @@
 body {
 	margin: 0;
 	background-color: #E8E5DD;
-	overflow:hidden;
 }
 
 * {
@@ -172,6 +171,7 @@ div .panel p{
 	border-radius: 10px;
 	width: 26%;
 	padding: 1%;
+	height: 500px;
 	float: left;
 	margin-left: 15%;
 }
@@ -233,4 +233,97 @@ button:hover {
 }
 #nav a {
 	text-decoration: none;
+}
+
+@media only screen and (max-width: 1230px){
+	#nav button {
+		font-size: 1.5em;
+	}
+}
+@media only screen and (min-width: 1600px){
+	#page1 {
+	height: 600px;
+	}
+	.parallax {
+    height: 600px; 
+	}
+	.cover {
+	height: 600px;
+	}
+	.container {
+	height: 580px;
+	}
+}
+@media only screen and (min-width: 1800px ){
+	#page1 {
+	height: 650px;
+	}
+	.parallax {
+    height: 650px; 
+	}
+	.cover {
+	height: 650px;
+	}
+	.container {
+	height: 620px;
+	}
+}
+@media only screen and (min-width: 2000px){
+	#page1 {
+	height: 700px;
+	}
+	.parallax {
+    height: 700px; 
+	}
+	.cover {
+	height: 700px;
+	}
+	.container {
+	height: 670px;
+	}
+	#nav button{
+	font-size: 2.5em;
+	)
+}
+@media only screen and (min-width: 2200px){
+	#page1 {
+	height: 750px;
+	}
+	.parallax {
+    height: 750px; 
+	}
+	.cover {
+	height: 750px;
+	}
+	.container {
+	height: 720px;
+	}
+}
+@media only screen and (min-width: 2400px){
+	#page1 {
+	height: 900px;
+	}
+	.parallax {
+    height: 900px; 
+	}
+	.cover {
+	height: 900px;
+	}
+	.container {
+	height: 870px;
+	}
+}
+@media only screen and (min-width: 2600px){
+	#page1 {
+	height: 1000px;
+	}
+	.parallax {
+    height: 1000px; 
+	}
+	.cover {
+	height: 1000px;
+	}
+	.container {
+	height: 970px;
+	}
 }
