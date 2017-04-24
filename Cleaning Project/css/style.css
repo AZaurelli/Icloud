@@ -212,11 +212,13 @@ input:focus{
 	padding: 2% 1% 1% 0;
 	position:absolute;
 	top:0;
+	
 }
 #nav button{
 	width: 30%;
 	display: inline;
 	padding: 0 5%;
+	margin-top: 1%;
 	font-size: 2em;
 	border: 1px solid black;
 	background: none;
